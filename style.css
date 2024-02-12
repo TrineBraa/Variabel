@@ -1,0 +1,21 @@
+#Box {
+    border: solid black 3px ;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    margin: 40px;
+}
+
+#changingBackgroundColor {
+    height: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    width: 200px;
+    color: rgb(169, 26, 169);
+    background-color: beige;
+}
+
+.selectedDiv {
+    background-color: burlywood;
+    font-size: x-large;
+}

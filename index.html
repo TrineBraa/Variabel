@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <!-- Bytting av bakgrunnsfarge på nettleser eller valgt div v/klikk.
+
+- Lag 3 eller flere div'er som representerer hver sin farge.
+Disse skal brukes til å velge hvilken farge man setter på nettleserbakgrunenn eller div'en man velger.
+
+- Lag en knapp som endrer hele bakgrunnsfargen i nettleseren til den fargen du har valgt.
+
+- Lag deretter 2 eller flere tomme (men synlige) div'er.
+Disse er de som skal klikkes på for å velges og da få den bakgrunnsfargen man har valgt fra fargedivene.
+
+- Gjør det også synlig hvilken av disse div'ene som er valgt - ved f.eks å sette på en ramme.
+
+Dette er en oppgave hvor du trenger å bruke variabler til å spare på valgene du har tatt, og koble disse sammen.
+
+Ting som kan være lurt å sjekke ut:
+
+.classList.remove()
+.classList.toggle()
+.classList.add()
+Man kan skrive: ' divVariabel.style.detManVilStyle = "ny propertyverdi man vil ha" ' for å endre CSS i JavaScript. -->
+
+<div id="colorChoice1" onclick="Selected('yellow')">Yellow</div>
+<div id="colorChoice2" onclick="Selected('purple')">Purple</div>
+<div id="colorChoice3" onclick="Selected('pink')">Pink</div>
+<div id="colorChoice4" onclick="Selected('blue')">Blue</div>
+<div id="colorChoice5" onclick="Selected('red')">Red</div>
+<div id="colorChoice6" onclick="Selected('lightgreen')">Light Green</div>
+<div id="colorChoice7" onclick="Selected('lightcoral')">Light Coral</div>
+<br/>
+<br/>
+<br/>
+
+<button id="changingBackgroundColor">Change Background</button>
+
+<div id="Box" onclick="Box1()"></div>
+<div id="Box" onclick="Box2()"></div>
+<div id="Box" onclick="Box3()"></div>
+<div id="Box" onclick="Box4()"></div>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
