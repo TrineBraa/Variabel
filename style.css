@@ -1,9 +1,34 @@
-#Box {
+#Box1 {
     border: solid black 3px ;
     width: 100px;
     height:100px;
     border-radius: 50%;
     margin: 40px;
+    background-color: white;
+}
+#Box2 {
+    border: solid black 3px ;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    margin: 40px;
+    background-color: white;
+}
+#Box3 {
+    border: solid black 3px ;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    margin: 40px;   
+     background-color: white;
+}
+#Box4 {
+    border: solid black 3px ;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    margin: 40px;
+    background-color: white;
 }
 
 #changingBackgroundColor {

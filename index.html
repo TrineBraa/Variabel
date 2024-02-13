@@ -29,24 +29,26 @@ Ting som kan være lurt å sjekke ut:
 .classList.add()
 Man kan skrive: ' divVariabel.style.detManVilStyle = "ny propertyverdi man vil ha" ' for å endre CSS i JavaScript. -->
 
-<div id="colorChoice1" onclick="Selected('yellow')">Yellow</div>
-<div id="colorChoice2" onclick="Selected('purple')">Purple</div>
-<div id="colorChoice3" onclick="Selected('pink')">Pink</div>
-<div id="colorChoice4" onclick="Selected('blue')">Blue</div>
-<div id="colorChoice5" onclick="Selected('red')">Red</div>
-<div id="colorChoice6" onclick="Selected('lightgreen')">Light Green</div>
-<div id="colorChoice7" onclick="Selected('lightcoral')">Light Coral</div>
+<!-- Disse Divene er de som velger hvilken farge som skal brukes. De sender også med hele ID'n sin til funksjonen slik at jeg kan toggle de av eller på  -->
+<div id="colorChoice1" onclick="Selected(this.id, 'yellow')">Yellow</div>
+<div id="colorChoice2" onclick="Selected(this.id, 'purple')">Purple</div>
+<div id="colorChoice3" onclick="Selected(this.id, 'pink')">Pink</div>
+<div id="colorChoice4" onclick="Selected(this.id, 'blue')">Blue</div>
+<div id="colorChoice5" onclick="Selected(this.id, 'red')">Red</div>
+<div id="colorChoice6" onclick="Selected(this.id, 'lightgreen')">Light Green</div>
+<div id="colorChoice7" onclick="Selected(this.id, 'Coral')">Coral</div>
 <br/>
 <br/>
 <br/>
+ <!--  Knappen som endrer body bakgrunnsfargen på hele siden -->
+<button id="changingBackgroundColor" onclick="bodyColor()">Change Background</button>
 
-<button id="changingBackgroundColor">Change Background</button>
-
-<div id="Box" onclick="Box1()"></div>
-<div id="Box" onclick="Box2()"></div>
-<div id="Box" onclick="Box3()"></div>
-<div id="Box" onclick="Box4()"></div>
-
+<!-- Divene som jeg ønsker å gi farger til ved onclick.  -->
+<div id="Box1" onclick="giveAColor('Box1')"></div>
+<div id="Box2" onclick="giveAColor('Box2')"></div>
+<div id="Box3" onclick="giveAColor('Box3')"></div>
+<div id="Box4" onclick="giveAColor('Box4')"></div>
+  <!-- Ved å gi onclick ID til Box1 vil gjøre at endriver ved onclick skjer i den boxen som er merket. på denne måten kan jeg gjøre endringer i forskjellige diver. Dersom jeg ikke endrer navnet i funksjonen vil den id'n som står bli den diven som endres.  -->
 
 <script src="script.js"></script>
     
